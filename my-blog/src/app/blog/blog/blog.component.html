@@ -1,0 +1,11 @@
+<mat-sidenav-container class="blog-content">
+    <mat-sidenav mode="side" opened="true" class="side-bar">
+      <div class="menu-item" *ngFor="let item of list">
+        <button mat-button [routerLink]="'/home/blog' + item.router" >{{item.title}}</button>
+      </div>
+    </mat-sidenav>
+
+    <mat-sidenav-content>
+      <router-outlet></router-outlet>
+    </mat-sidenav-content>
+  </mat-sidenav-container>
