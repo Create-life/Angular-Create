@@ -1,0 +1,31 @@
+<div class="container">
+  <div class="bg"></div>
+  <div class="title">
+    <h2>SYD打怪抽查</h2>
+    <p class="today">
+      今日收图人：
+      <span>{{todayPerson}}</span>
+      <i style="padding-left:20px;">{{todayFormat}}</i>
+    </p>
+  </div>
+  <div class="search">
+    <div class="left">
+      <input type="number" id="sum" placeholder="输入成员总数" [(ngModel)]="totalPeople">
+      <input type="number" id="num" placeholder="输入抽查人数" style="margin-top:20px;" [(ngModel)]="wantSelectNum">
+    </div>
+    <div class="right">
+      <button id="btn" (click)="getMember()" [disabled]="flag" >抽取</button>
+    </div>
+  </div>
+  <div class="box">
+    <h3 style="text-align:center;"></h3>
+    <div class="content">
+      <div class="every" *ngFor="let item of selectList">{{item}}</div>
+    </div>
+  </div>
+  <p class="tomorrow">
+    明日收图人：
+    <span>{{nextPerson}}</span>
+    <i style="padding-left:20px;">{{tomorrowFormat}}</i>
+  </p>
+</div>

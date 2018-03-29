@@ -7,6 +7,7 @@ import { RootModule } from './root/root.module';
 import { CoreModule } from './core/core.module';
 import { AppRouting } from './app.routing';
 import { BlogModule } from './blog/blog.module';
+import { SydModule } from './syd/syd.module';
 
 
 @NgModule({
@@ -18,7 +19,8 @@ import { BlogModule } from './blog/blog.module';
     RootModule,
     CoreModule,
     AppRouting,
-    BlogModule
+    BlogModule,
+    SydModule
   ],
   providers: [],
   bootstrap: [AppComponent]
