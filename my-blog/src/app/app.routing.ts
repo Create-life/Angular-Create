@@ -1,13 +1,14 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { HomeComponent } from './root/home/home.component';
-import { RootRoutes } from './root/root.routing';
-import { NotFoundComponent } from './root/not-found/not-found.component';
+import { NotFoundComponent } from './not-found/not-found.component';
+import { BlogRoutes } from './blog/blog.routing';
+import { SydRoutes } from './syd/syd.routing';
 
 
 const appRoutes: Routes = [
-  {path: '', redirectTo: '/home/blog', pathMatch: 'full'},
-  ...RootRoutes,
+  {path: '', redirectTo: '/blog/start', pathMatch: 'full'},
+  ...BlogRoutes,
+  ...SydRoutes,
   {path: '**', component: NotFoundComponent}
 ];
 

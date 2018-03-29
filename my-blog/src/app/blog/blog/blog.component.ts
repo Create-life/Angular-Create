@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { BlogList } from '../../list/Blog.list';
+import { BlogList } from '../list/blog.list';
+
 @Component({
   selector: 'app-blog',
   templateUrl: './blog.component.html',
