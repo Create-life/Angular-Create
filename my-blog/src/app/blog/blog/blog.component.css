@@ -10,14 +10,6 @@
   box-shadow: 6px 0 6px rgba(0,0,0,.1);
 }
 
-.side-bar::-webkit-scrollbar {
-  width: 5px;
-}
-.side-bar::-webkit-scrollbar-thumb {
-  background-color: rgb(110, 110, 110);
-  border-radius: 5px;
-}
-
 .menu-item {
   width: 260px;
 }
@@ -32,6 +24,7 @@
   border: none;
 }
 
-mat-sidenav-content{
+.bolg-content {
+  padding: 50px;
   margin-top: 64px;
 }
